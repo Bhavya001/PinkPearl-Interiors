@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--jqiuery slider starts-->
+<link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+<script src="js/js-image-slider.js" type="text/javascript"></script>
+<!--jquery slider ends-->
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="head">
+
+<div class="headinn">
+<div id="line">
+</div>
+<div id="log">
+<img src="images/pinklogo.png">
+<p><strong style="color:#ff0097;font-size:55px;font-weight:bold;margin-left:-18px;">Pinkpearl</strong></p>
+<p style="margin-top:40px;margin-left:-108px;">interiors
+</p>
+</div>
+<div id="headinnrig">
+<div style="width:400px;height:15px;color:#782c5f;font-family:Arial, Helvetica, sans-serif;font-size:15px;text-align:center;float:right;margin-right:-14px;">INTERIOR DESIGNER</div>
+<div id="hriglf">
+
+<p style="font-size:20px;">Monica Mathur</p>
+<p>B.tech (Arch.Engg),Diploma in Interior Design</p>
+<p style="font-size:18px;">+ 91 - 95504 99978
+</p>
+</div>
+<!--<div id="hrigrg">
+<img src="images/part.png">
+
+<p style="font-size:20px;color:#000;">Sonali</p>
+<p style="color:#000;">Diploma in Interior Design</p>
+<p style="font-size:18px;">+ 91 - 99661 26012
+
+</p>
+</div>-->
+</div><!--headinnrig ends-->
+<div class="menu">
+<ul>
+<li><a href="index.html" >Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+</div><!--headinn ends-->
+</div><!--head ends-->
+<div class="banner">
+<div id="banninn">
+<div class="slider">
+	       <div id="slider">
+
+<img src="images/ban2.jpg">
+<img src="images/ban3.jpg">
+<img src="images/ban4.jpg">
+<img src="images/ban5.jpg">
+<img src="images/ban6.jpg">
+
+</div></div>
+</div>
+<div class="servc">
+<div id="contitle">
+Services
+</div>
+
+<div id="servco">
+<p>
+We do turnkey interior projects, our work includes all types of interior decoration works. We do contracting works of commercial, residential, showrooms, shops, hotels, restaurant, clinic, boutique, beauty parlour, entrance lobby and many more. 
+</p>
+</div>
+<div id="contitle">
+Turnkey Contract (Design & Build)
+</div>
+<div id="servbx">
+<img src="images/serv1.png" style="border:8px solid #ff95dd;">
+<p>
+Turnkey project or design-n-build service under this type, pink pearl interiors undertakes complete responsibility for interior design services and execution till handover. At pink pearl interiors, turnkey contract, the client gets the hassle free project.The client has to do is finalise the material which we will be proposed from our expert team which assure the quality of materials like plywood, wood, hardware, type of plumbing, accessories and finishing items like veneer, laminate, marble, tiles, light fittings, curtains etc. with best option and you get immense benefits in this kind of contract with single window responsibility for design, execution and professional & trained team to look after your project. <br/>
+
+
+	<img src="images/cir.png" style="margin:6px 0px;">&nbsp;&nbsp;&nbsp;In time budget delivery of project.<br/>
+	<img src="images/cir.png" style="margin:6px 0px;">&nbsp;&nbsp;&nbsp;Best design options to choose from.<br/>
+	<img src="images/cir.png" style="margin:6px 0px;">&nbsp;&nbsp;&nbsp;Best quality of work for entire project.<br/>
+	<img src="images/cir.png" style="margin:6px 0px;">&nbsp;&nbsp;&nbsp;Day-to-day site management for execution.<br/>
+
+</p>
+</div><!--servbx ends-->
+<div id="servbx1">
+<div id="contitle">
+Interior Design Consultancy
+</div>
+
+<img src="images/serv2.png" style="border:8px solid #ff95dd;">
+<p>
+For those clients who have their own team of vendors and contractors. pink pearl interiors provides the client with complete detailed interior design along with site supervision for quality and design assurance. our scope of work for this kind of service includes but not limited :<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;Making initial interior design based on clients requirements.<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;On finalizing interior design layout pink pearl interiors undertakes making detailed &nbsp;&nbsp;designs and drawings of interior ie! ceiling, flooring and furniture, electrical, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;plumbing and tiling works.<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;Finalizing finishing materials for the interiors.<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;Compiling a document of drawings and interior design references.<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;Making a BOQ for inviting quotations to arrive at interior project cost.<br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;Regular site supervision for interior design and quality assurance. <br/>
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;Explaining interior designs to the contractor.<br/>
+
+</p>
+</div>
+<div id="servbx2">
+<div id="contitle">
+Services includes :
+</div>
+
+<p>
+1.	Preparing initial design based on design brief and site survey. <br/>
+2.	After approval of interior layout, pink pearl interiors prepare layouts like<br/>
+
+<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;SURVEY LAYOUT<br/>
+	<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;FURNITURE LAYOUT<br/>
+  <img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp; CEILING LAYOUT<br/>
+	<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;FLOORING LAYOUT<br/>
+	  <img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;LIGHTING LAYOUT<br/>
+	<!--<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;	RACEWAY LAYOUT <br/>
+	<img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;	DATA POINT LAYOUT<br/>
+	  <img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;	PA SYSTEM LAYOUT <br/>
+	  <img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;	RAW POWER POINT <br/>
+	   <img src="images/cir.png" style="float:left;margin:6px 0px;">&nbsp;&nbsp;&nbsp;	CC CAMERA LAYOUT<br/>-->
+3.	Finishing material selection<br/>
+4.	Final estimation<br/>
+5.	Co-ordination for material & labour management<br/>
+6.	Quality assurance <br/>
+7.	Site meetings with client and our execution team<br/>
+8.	Handover<br/>
+9.	Post care
+
+</p>
+</div>
+
+
+
+</div><!--servc ends-->
+
+</div><!--banner ends-->
+<div id="btm">
+<div id="link">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+<li><a href="contactus.html">Contact us</a></li>
+
+</ul>
+</div>
+
+<div style="clear:both;"></div>
+<div id="foot">
+<div id="foolef">
+<p>
+Copyrights 2020 &copy; pinkpearl interior All rights reserved
+</p>
+</div>
+<div id="foorig">
+<!--<a href="http://www.zawsoft.com" target="_blank" ><img src="images/zawsoft.png"></a>-->
+
+</div>
+</div>
+</div><!--btm ends-->
+<a href="#" class="go-top">Go Top</a>
+
+
+</div><!--wrapper ends-->
+<script type="text/javascript">
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+
+</script>
+
+</body>
+</html>
